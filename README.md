@@ -57,8 +57,7 @@ A comprehensive list of open issues can be found at [http://jira.perfect.org:808
 Add this project as a dependency in your Package.swift file.
 
 ```
-.Package(url: "https://github.com/PerfectSideRepo/Perfect-BCrypt.git", 
-majorVersion: 3)
+.Package(url: "https://github.com/PerfectSideRepos/PerfectBCrypt.git", majorVersion: 3)
 ```
 
 ## Quick Start
