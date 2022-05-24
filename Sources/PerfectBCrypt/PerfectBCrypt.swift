@@ -128,7 +128,8 @@ open class BCrypt {
   ///   - hashed: a hashed string to test
   /// - returns:
   ///   True if matches.
-  @available(OSX 10.12.1, *)
+    @available(iOS 10.1, *)
+    @available(OSX 10.12.1, *)
   public static func Check(_ password: String, hashed: String) -> Bool {
     do {
       let ret = try Hash(password, salt: hashed)

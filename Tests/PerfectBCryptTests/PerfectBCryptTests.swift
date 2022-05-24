@@ -11,9 +11,9 @@ class PerfectBCryptTests: XCTestCase {
       let shadow = "$2b$04$cVWp4XaNU8a4v1uMRum2SO026BWLIoQMD/TXg5uZV.0P.uO8m3YEm"
       let hashed = try BCrypt.Hash(password, salt: salt)
       XCTAssertEqual(hashed, shadow)
-      if #available(OSX 10.12.1, *) {
-        XCTAssertTrue(BCrypt.Check(password, hashed: shadow))
-      }
+        if #available(iOS 10.1, *) {
+            XCTAssertTrue(BCrypt.Check(password, hashed: shadow))
+        }
       #if os(Linux)
         XCTAssertTrue(BCrypt.Check(password, hashed: shadow))
       #endif

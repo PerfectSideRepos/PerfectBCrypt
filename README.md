@@ -109,3 +109,8 @@ desiredKeyBytes: 32, rounds: 4, ignoreFewRounds: true)
 ## Further Information
 
 For more documentation, please visit [perfect.org](http://www.perfect.org/docs/crypto.html).
+
+Forked from Perfect-BCrypt.
+
+@available(iOS 10.1, *) added in PerfectBCrypt.swift:131 for iOS compability.
+#available(iOS 10.1, *) updage in PerfectBCryptTests.swift
